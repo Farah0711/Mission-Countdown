@@ -1,4 +1,67 @@
-html, body {
-    height: 100%;
-    width: 100%;
+html, 
+    
+body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  background-color: #f4f4f4;
+  padding: 50px;
+  margin: 0;
+}
+
+/* Main title */
+h1 {
+  font-size: 3rem;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+/* Button styling */
+button {
+  padding: 12px 25px;
+  margin: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Timer and message display */
+h2 {
+  font-size: 2rem;
+  margin: 20px 0;
+  color: #444;
+}
+
+/* Color states for the timeout message */
+.red {
+  color: #d9534f; /* Bootstrap danger red */
+}
+
+.green {
+  color: #28a745; /* Bootstrap success green */
+}
+
+/* GO! animations */
+.repeat-go {
+  font-weight: bold;
+  font-size: 2rem;
+  color: #000;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+/* When text appears */
+.repeat-go.show {
+  opacity: 1;
+  color: #17a2b8; /* Bootstrap info blue */
 }

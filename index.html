@@ -1,10 +1,47 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" href="style.css">
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width" />
-        <title>replit</title>
-        <link href="style.css" rel="stylesheet" type="text/css" />
-    </head>
-    <body></body>
+        <title>Mission Countdown</title>
+        <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding-top: 50px;
+      background-color: #0ebeb0;
+    }
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 30px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 1em;
+      margin: 10px;
+      cursor: pointer;
+    }
+    #timeout-display.red {
+      color: rgb(105, 14, 86);
+    }
+    #timeout-display.green {
+      color: green;
+    }
+  </style>
+        
+        </head>
+    <body>
+         <h1>MISSION COUNTDOWN</h1>
+         <h2 class="repeat-go"></h2>
+        <button id="start-timeout">GET READY?</button>
+<h2 id="timeout-display"></h2>
+
+<button id="start-interval">START COUNTDOWN</button>
+<h2 id="interval-display"></h2>
+
+
+
+  <script src="script.js"></script>
+    </body>
 </html>
